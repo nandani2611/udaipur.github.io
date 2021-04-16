@@ -7,7 +7,9 @@
     margin-right: auto;
 }
 .bckgrnd {
-  background-color: #eec9ee;    
+  background-color: #eec9ee;  
+  margin-left: 7px;
+  margin-right: 10px;
   }
 
 .H1{
