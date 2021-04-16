@@ -1,6 +1,11 @@
 .mySlides {
   display:none; 
 }
+.mySlidess {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .bckgrnd {
   background-color: #eec9ee;    
   }
