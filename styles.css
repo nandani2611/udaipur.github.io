@@ -10,17 +10,16 @@
   background-color: #eec9ee;  
   margin-left: 15px;
   margin-right: 10px;
-  }
+ }
 
-.H1{
+.H1 {
   color: rgb(26, 0, 139);
   font-family: Papyrus;
   font-size: 300%;
   font-style: oblique;
   font-weight: 900;
-
 }
-.H3{
+.H3 {
   color: rgb(207, 5, 22);
   font-family: "Dancing Script", cursive;
   font-size: 150%;
@@ -32,7 +31,7 @@
   font-weight: 400;
   font-size: 110%;
 }
-.heading{
+.heading {
   color: rgb(5, 75, 52);
   font-family: Brush Script MT;
   font-size: 180%;
@@ -42,4 +41,90 @@
   margin-left: 7px;
   margin-right: 10px;
   background-color: rgba(155, 206, 135, 0.295);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+.star-rating form {
+  display: none;
+}
+.star-rating .thanks-msg {
+  display: none;
+  font-size: 20px;
+  margin: 40px auto;
+  color: #022b03;
+  background-color: rgba(76, 175, 80, 0.1411764705882353);
+  padding: 8px 20px;
+  border-left: 3px solid #4caf50;
+  border-radius: 20px;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating {
+  margin: 50px auto;
+  display: table;
+  width: 350px;
+}
+.star-rating label {
+  padding: 10px;
+  float: right;
+  font-size: 44px;
+  color: rgb(167, 137, 98);
+}
+.star-rating input:not(:checked) ~ label:hover,
+.star-rating input:not(:checked) ~ label:hover ~ label {
+  color: #b61a1a;
+}
+.star-rating input:checked ~ label {
+  color: #b61a1a;
+}
+.star-rating form .rating-reaction:before {
+  width: 100%;
+  float: left;
+  color: #b61a1a;
+}
+.star-rating #rating-1:checked ~ form .rating-reaction:before {
+  content: "I hate it";
+}
+.star-rating #rating-2:checked ~ form .rating-reaction:before {
+  content: "I don't like it";
+}
+.star-rating #rating-3:checked ~ form .rating-reaction:before {
+  content: "It's good";
+}
+.star-rating #rating-4:checked ~ form .rating-reaction:before {
+  content: "I like it";
+}
+.star-rating #rating-5:checked ~ form .rating-reaction:before {
+  content: "I love it";
+}
+.star-rating input:checked ~ form {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  padding-top: 15px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.star-rating form .rating-reaction {
+  font-size: 24px;
+  float: left;
+  text-transform: capitalize;
+}
+.star-rating form .submit-rating {
+  border: none;
+  outline: none;
+  background: #cc633c;
+  color: #eeebe2;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 5px 15px;
+  cursor: pointer;
+  float: right;
+}
+form .submit-rating:hover {
+  background-color: #333;
 }
